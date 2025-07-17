@@ -1,0 +1,452 @@
+/* Reset y configuración base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: #fff0f5;
+  color: #5e8c14;
+  background-image: url('flores-patron.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  line-height: 1.4;
+}
+
+/* Contenedor principal responsivo */
+.seccion {
+  padding: 20px 15px;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* Títulos responsivos */
+h1, h2 {
+  margin: 10px 0;
+  word-wrap: break-word;
+}
+
+/* Estilos de frases con tamaños responsivos */
+.frase {
+  font-family: 'Great Vibes', cursive;
+  margin: 20px 10px;
+  line-height: 1.2;
+  font-size: clamp(20px, 4vw, 35px);
+  padding: 0 10px;
+}
+
+.frase2, .frase3 {
+  font-style: italic;
+  margin: 20px 10px;
+  line-height: 1.3;
+  font-size: clamp(16px, 3vw, 20px);
+  padding: 0 10px;
+}
+
+.frase4, .frase5 {
+  font-style: italic;
+  margin: 20px 10px;
+  line-height: 1.3;
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* Imágenes responsivas */
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Botones responsivos */
+button, .boton {
+  margin: 15px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: rgb(3, 0, 0);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: clamp(14px, 2.5vw, 16px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  min-width: 120px;
+}
+
+button:hover, .boton:hover {
+  background-color: #5e8c14;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Footer responsivo */
+footer {
+  background: #f3e5f5;
+  padding: 20px 15px;
+  font-size: clamp(12px, 2vw, 14px);
+  color: #6a1b9a;
+}
+
+/* Clases especiales responsivas */
+.especial {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(30px, 6vw, 46px);
+  color: #000000;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.especial1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(40px, 8vw, 82px);
+  color: #000000;
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+
+.especial4 {
+  font-style: italic;
+  font-size: clamp(20px, 4vw, 28px);
+  color: #000000;
+  margin: 10px 15px;
+}
+
+.especial5 {
+  font-style: italic;
+  font-size: clamp(35px, 7vw, 55px);
+  color: #000000;
+  margin: 10px 15px;
+}
+
+.especial6 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(40px, 6vw, 62px);
+  color: #000000;
+  margin: 20px 15px;
+}
+
+.nombres {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(50px, 8vw, 80px);
+  color: #5e8c14;
+  margin-top: 0;
+  padding: 0 15px;
+  line-height: 1.2;
+}
+
+/* Countdown responsivo */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 13px);
+  margin: 20px 10px;
+  flex-wrap: wrap;
+}
+
+.time-block {
+  text-align: center;
+  min-width: 60px;
+  margin: 5px;
+}
+
+.number {
+  font-size: clamp(0.8em, 3vw, 1em);
+  font-style: italic;
+  background: rgba(255,255,255,0.6);
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: clamp(0.6em, 2vw, 0.8em);
+  margin-top: 2px;
+}
+
+/* Sección de evento responsiva */
+.evento {
+  padding: 20px 15px;
+  color: #5e8c14;
+  font-family: 'Great Vibes', cursive, sans-serif;
+  text-align: center;
+}
+
+.evento-bloque {
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+.evento-titulo {
+  font-size: clamp(35px, 7vw, 60px);
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.evento-icono {
+  font-size: clamp(35px, 6vw, 52px);
+  margin-bottom: 15px;
+}
+
+.evento-hora {
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.evento-lugar {
+  font-size: clamp(14px, 2.5vw, 18px);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  padding: 0 10px;
+  word-wrap: break-word;
+}
+
+.evento-boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5e8c14;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #f5f5f4;
+  font-family: sans-serif;
+  font-size: clamp(12px, 2.5vw, 14px);
+  transition: all 0.3s ease;
+  margin: 10px;
+  min-width: 100px;
+}
+
+.evento-boton:hover {
+  background-color: rgba(94, 140, 20, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Vestimenta responsiva */
+.vestimenta {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.vestimenta-titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(35px, 7vw, 60px);
+  margin-bottom: 20px;
+}
+
+.vestimenta-icono img {
+  width: clamp(150px, 40vw, 300px);
+  height: auto;
+  max-width: 100%;
+}
+
+.vestimenta-subtitulo {
+  font-weight: bold;
+  font-size: clamp(25px, 5vw, 38px);
+  margin-bottom: 15px;
+  font-family: 'Great Vibes';
+}
+
+.vestimenta-texto {
+  font-size: clamp(20px, 4vw, 32px);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Great Vibes';
+  color: #5e8c14;
+  padding: 0 15px;
+  line-height: 1.4;
+}
+
+.confirmacion-icono {
+  font-size: clamp(50px, 10vw, 90px);
+  margin-bottom: 15px;
+  color: #6b7b5d;
+}
+
+.confirmacion {
+  font-size: clamp(18px, 3vw, 24px);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  color: #5e8c14;
+  padding: 0 15px;
+  line-height: 1.4;
+}
+
+/* Contenedor de imagen con texto responsivo */
+.contenedor-imagen {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.texto-encima {
+  position: absolute;
+  top: clamp(40px, 8vw, 60px);
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(3, 3, 3);
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(18px, 3vw, 25px);
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  white-space: nowrap;
+}
+
+.texto-encima2 {
+  position: absolute;
+  top: clamp(60px, 12vw, 90px);
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(3, 3, 3);
+  font-size: clamp(30px, 6vw, 45px);
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  white-space: nowrap;
+}
+
+/* Espaciadores responsivos */
+.espaciador-pequeno {
+  height: clamp(20px, 5vw, 50px);
+}
+
+.espaciador-mediano {
+  height: clamp(50px, 10vw, 150px);
+}
+
+.espaciador-grande {
+  height: clamp(100px, 15vw, 280px);
+}
+
+/* Media queries para ajustes específicos */
+@media (max-width: 768px) {
+  .seccion {
+    padding: 15px 10px;
+  }
+  
+  .frase {
+    margin: 15px 5px;
+    font-size: 24px;
+  }
+  
+  .nombres {
+    font-size: 60px;
+    line-height: 1.1;
+  }
+  
+  #countdown {
+    gap: 8px;
+  }
+  
+  .time-block {
+    min-width: 50px;
+  }
+  
+  .evento-lugar {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  
+  .vestimenta-texto {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .seccion {
+    padding: 10px 8px;
+  }
+  
+  .frase {
+    font-size: 20px;
+    margin: 10px 5px;
+  }
+  
+  .nombres {
+    font-size: 45px;
+  }
+  
+  .evento-titulo {
+    font-size: 40px;
+  }
+  
+  .evento-lugar {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  
+  .vestimenta-texto {
+    font-size: 20px;
+  }
+  
+  .texto-encima {
+    font-size: 16px;
+  }
+  
+  .texto-encima2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nombres {
+    font-size: 38px;
+  }
+  
+  .evento-titulo {
+    font-size: 35px;
+  }
+  
+  .vestimenta-titulo {
+    font-size: 35px;
+  }
+  
+  .evento-lugar {
+    font-size: 12px;
+  }
+  
+  button, .boton, .evento-boton {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
+
+/* Mejoras para pantallas grandes */
+@media (min-width: 1200px) {
+  .seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contenedor-imagen {
+    max-width: 800px;
+  }
+}
+
+/* Optimización para orientación landscape en móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+  .seccion {
+    min-height: auto;
+    padding: 20px 15px;
+  }
+  
+  .nombres {
+    font-size: 40px;
+  }
+  
+  .especial1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
